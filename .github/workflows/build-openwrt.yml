@@ -25,13 +25,14 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: .config
+  DIY_SH2: diy2.sh
   DIY_SH: diy.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  TZ: Asia/Shanghai
-
+  TZ: Asia/Tehran
+  
 jobs:
   build:
     runs-on: ubuntu-latest
