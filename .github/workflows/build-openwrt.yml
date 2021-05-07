@@ -79,14 +79,6 @@ jobs:
       uses: P3TERX/ssh2actions@v1.0.0
       if: env.SSH_ACTIONS == 'true'
 
-    - name: Download package
-      id: package
-      run: |
-        cd openwrt
-        make download -j8
-        find dl -size -1024c -exec ls -l {} \;
-        find dl -size -1024c -exec rm -f {} \;
-
     - name: Compile the firmware
       id: compile
       run: |
